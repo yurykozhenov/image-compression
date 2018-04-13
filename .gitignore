@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+.vscode/
+*.exe
+*.zip
+*.7z
+dist/

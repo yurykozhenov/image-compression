@@ -1,0 +1,21 @@
+{
+  "name": "image-compression",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lzw": "node ./lzw/run-lzw.js",
+    "jpeg-ffmpeg": "node ./jpeg-ffmpeg/run-jpeg-ffmpeg.js",
+    "jpeg": "node ./jpeg/run-jpeg.js",
+    "lzw:default": "node ./lzw/run-lzw.js ./assets/vector-image.svg ./dist/compressed-vector-image.svg.lzw ./dist/decompressed-vector-image.svg",
+    "jpeg-ffmpeg:default": "node ./jpeg-ffmpeg/run-jpeg-ffmpeg.js ./assets/lenna.bmp ./dist/lenna.jpg",
+    "jpeg:default": "node ./jpeg/run-jpeg.js ./assets/lenna.bmp ./dist/lenna.jpg 5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.2.28",
+    "jpeg-js": "^0.3.4",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
