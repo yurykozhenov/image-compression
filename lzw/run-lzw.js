@@ -18,7 +18,7 @@ async function main() {
     // Decompress
     const compressedFile = await readFileAsync(outputCompressedFilename, 'utf8');
     const decompressedData = LZW.decompress(compressedFile.split(',').map(x => Number(x)));
-    await writeFileAsync(outputDecompressedFilename, decompressedData);
+    await writeFileAsync(outputDecompressedFilename, decompressedData, 'utf8');
 }
 
 main();
